@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+      crossorigin=""
+    />
+    <script
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+      crossorigin=""
+    ></script>
+    <title>Frontend Mentor | IP Address Tracker</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <div class="content-header">
+          <div class="title"><span>IP Address Tracker</span></div>
+          <div class="input-group">
+            <input
+              id="inputText"
+              type="text"
+              placeholder="Search for any IP address or Domain"
+            />
+            <div id="ipAddress">
+              <img src="./images/icon-arrow.svg" alt="arrow" />
+            </div>
+          </div>
+        </div>
+        <div class="detail">
+          <div class="detailItem">
+            <div><span>IP ADDRESS</span></div>
+            <div id="detail-ip"></div>
+          </div>
+          <div class="detailItem">
+            <div><span>LOCATION</span></div>
+            <div id="detail-location"></div>
+          </div>
+          <div class="detailItem">
+            <div><span>TIMEZONE</span></div>
+            <div id="detail-timezone"></div>
+          </div>
+          <div class="detailItem">
+            <div><span>ISP</span></div>
+            <div id="detail-isp"></div>
+          </div>
+        </div>
+      </div>
+      <div id="map"></div>
+    </div>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Ihlas Sul Akbar</a>.
+    </div>
+  </body>
+  <script src="/script/script.js"></script>
+</html>
